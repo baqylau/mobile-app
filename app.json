@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Baqylau App",
+    "slug": "baqylau",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs to access your location to show you your current position.",
+        "NSLocationAlwaysUsageDescription": "This app needs to access your location to show you your current position."
+      },
+      "bundleIdentifier": "kz.baqylau.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "kz.baqylau.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fa0f83cf-ea9f-4f15-be21-56813ff4937a"
+      }
+    }
+  }
+}
