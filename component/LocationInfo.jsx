@@ -1,8 +1,12 @@
 import {Text, View} from 'react-native';
 
 const LocationInfo = ({location, styles}) => {
-    if (!location.lat || !location.long || !location.speed) {
-        return null;
+    if (!location.lat || !location.long) {
+        return (
+            <View style={styles.row}>
+                <Text style={styles.rowItemHeader}>У нас нет вашей точной локации</Text>
+            </View>
+        );
     }
 
     const info = [

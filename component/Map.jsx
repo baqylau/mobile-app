@@ -11,7 +11,7 @@ const Map = ({location, styles}) => {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
             }}
-            provider={"google"}
+
         >
             <Marker coordinate={{latitude: location.lat, longitude: location.long}}>
                 <Image source={require("../assets/truck.png")} style={{

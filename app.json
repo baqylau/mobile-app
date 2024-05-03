@@ -2,7 +2,7 @@
   "expo": {
     "name": "Baqylau App",
     "slug": "baqylau",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -20,7 +20,12 @@
         "NSLocationWhenInUseUsageDescription": "This app needs to access your location to show you your current position.",
         "NSLocationAlwaysUsageDescription": "This app needs to access your location to show you your current position."
       },
-      "bundleIdentifier": "kz.baqylau.app"
+      "bundleIdentifier": "kz.baqylau.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA52y_n7gneWfP2Q7zHB1mxR-qGJSa3mQE"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -31,7 +36,13 @@
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION"
       ],
-      "package": "kz.baqylau.app"
+      "package": "kz.baqylau.app",
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA52y_n7gneWfP2Q7zHB1mxR-qGJSa3mQE"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
